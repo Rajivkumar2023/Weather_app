@@ -46,3 +46,36 @@ async function  checkWeather(city){
 searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value)
 })
+
+// script.js
+
+// Function to get the current time in 12-hour format
+function getCurrentTime12H() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+    let period = hours >= 12 ? 'PM' : 'AM';
+
+    // Convert hours to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12; // Handle midnight (0 hours)
+
+    // Add leading zeros to minutes if needed
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    return hours + ':' + minutes + ':' + seconds + ' ' + period;
+}
+
+// Update the time display every second
+function updateTime() {
+    const timeElement = document.getElementById('current-time');
+    timeElement.textContent = getCurrentTime12H();
+}
+
+// Initial call to update time
+updateTime();
+
+// Update time every second
+setInterval(updateTime, 1000);
