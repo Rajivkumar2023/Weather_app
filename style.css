@@ -18,6 +18,13 @@ body{
     padding: 40px 35px;
     text-align: center;
 }
+.card h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: -15px;
+    margin-bottom: 10px;
+
+}
 .search{
     width: 100%;
     display: flex;
@@ -94,5 +101,5 @@ body{
     display: none;
 }
 .created{
-    
+
 }
