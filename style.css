@@ -23,6 +23,7 @@ body{
     font-weight: 600;
     margin-top: -15px;
     margin-bottom:20px;
+    margin-bottom: 25px;
 
 }
 .search{
@@ -58,7 +59,7 @@ body{
 }
 .weather-icon{
     width: 170px;
-    margin-top: 30px;
+    margin-top: 2px;
 }
 .weather h1{
     font-size: 80px;
@@ -100,7 +101,6 @@ body{
     opacity: 0.8;
     display: none;
 }
-/* style.css */
 
 .time {
     margin-top: 20px;
@@ -109,6 +109,14 @@ body{
 }
 
 #current-time {
-    font-weight: bold;
-    color:#eedf10; /* blue color */
+    font-weight: 900;
+    color:#eedf10;
+}
+.date {
+    font-size: 18px;
+    color: #eceff1;
+}
+#current-date{
+    font-weight: 900;
+    color:#eedf10;
 }

@@ -79,3 +79,30 @@ updateTime();
 
 // Update time every second
 setInterval(updateTime, 1000);
+
+
+///
+// Function to get the current date
+// function getCurrentDate() {
+//     const now = new Date();
+//     return now.toLocaleDateString();
+// }
+// Function to get the current date in the format "day/month/year"
+// function getCurrentDate() {
+//     const now = new Date();
+//     const options = { day: 'numeric', month: 'numeric', year: 'numeric' };
+//     return now.toLocaleDateString(undefined, options);
+// }
+
+// const dateElement = document.querySelector('#current-date');
+// dateElement.textContent = getCurrentDate();
+
+function getCurrentDate() {
+    const now = new Date();
+    const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+    return now.toLocaleDateString('en-GB', options);
+}
+
+const dateElement = document.querySelector('#current-date');
+dateElement.textContent = getCurrentDate();
+
