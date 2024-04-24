@@ -62,11 +62,11 @@ body{
     margin-top: 2px;
 }
 .weather h1{
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 500;
 }
 .weather h2{
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 400;
     margin-top: -10px;
 }
