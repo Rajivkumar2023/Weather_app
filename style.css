@@ -123,6 +123,23 @@ body{
     color:#eedf10;
 }
 
+.created {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Align flex items to the end of the container */
+}
+
+.created h4 {
+    font-size: 20px;
+    color: #e9e8ec;
+    margin-top: 25px;
+}
+.created span{
+    color: #f5e507;
+}
+
+
+
 @media screen and (max-width: 500px) {
     .card{
         padding: 20px;
