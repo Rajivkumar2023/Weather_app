@@ -22,7 +22,6 @@ body{
     font-size: 40px;
     font-weight: 600;
     margin-top: -15px;
-    margin-bottom:20px;
     margin-bottom: 25px;
 
 }
@@ -31,6 +30,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .search input{
     border: 0;
@@ -43,6 +43,7 @@ body{
     flex: 1;
     margin-right: 16px;
     font-size: 18px;
+    border: 2px solid green;
 }
 .search button{
     border: 0;
@@ -52,6 +53,7 @@ body{
     width: 80px;
     height: 60px;
     cursor: pointer;
+    border: 2px solid green;
 }
 
 .search button img{
@@ -119,4 +121,99 @@ body{
 #current-date{
     font-weight: 900;
     color:#eedf10;
+}
+
+@media screen and (max-width: 500px) {
+    .card{
+        padding: 20px;
+    }
+    .card h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    }
+    .search{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 2px solid red; */
+    }
+    .search input{
+        border: 2px solid green;
+        width: 100px;
+        height: 40px;
+    }
+    .search button{
+        width: 60px;
+        height: 40px;
+        background-color: yellow;
+        border: 2px solid green;
+    }
+    .search button img{
+        width: 16px;
+       
+    }
+    .weather-icon{
+        width: 120px;
+        margin-top: 2px;
+    }
+    .weather h1{
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .weather h2{
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: -10px;
+    }
+    .details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 50px;
+        font-size: 10px;
+    }
+    
+    .col{
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    .col img{
+        width: 30px;
+        margin-right: 10px;
+    }
+    .humidity, .wind{
+        font-size: 18px;
+        margin-top: -6px;
+    }
+    .error{
+        text-align: left;
+        margin-top: 10px;
+        font-size: 14px;
+        opacity: 0.8;
+        display: none;
+    }
+    
+    .time {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #eceff1;
+    }
+    
+    #current-time {
+        font-weight: 900;
+        color:#eedf10;
+    }
+    .date {
+        font-size: 18px;
+        color: #eceff1;
+    }
+    #current-date{
+        font-weight: 900;
+        color:#eedf10;
+    }
 }
